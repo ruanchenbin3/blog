@@ -1,4 +1,4 @@
-baseURL = 'https://ruanchenbin3.github.io/raunchenbin3.github.io'
+baseURL = 'https://ruanchenbin3.github.io/blog'
 languageCode = 'zh-CN'
 title = '乍意清秋'
 theme = 'PaperMod'
