@@ -1,10 +1,10 @@
 baseURL = 'https://ruanchenbin3.github.io/raunchenbin3.github.io'
 languageCode = 'zh-CN'
-title = '先生的博客'
+title = '乍意清秋'
 theme = 'PaperMod'
 
 [params]
-  author = '先生'
+  author = '乍意清秋'
   description = '记录生活、思考与技术'
   ShowReadingTime = true
   ShowShareButtons = true
@@ -29,7 +29,7 @@ theme = 'PaperMod'
   # 首页配置
   [params.profileMode]
     enabled = true
-    title = "先生的博客"
+    title = "乍意清秋"
     subtitle = "记录生活、思考与技术"
     imageUrl = ""
     imageWidth = 120
@@ -96,7 +96,7 @@ theme = 'PaperMod'
   safari_pinned_tab = "/safari-pinned-tab.svg"
 
 [params.homeInfoParams]
-  Title = "先生的博客"
+  Title = "乍意清秋"
   Content = "记录生活、思考与技术"
 
 [outputs]
