@@ -1,0 +1,60 @@
+baseURL = 'https://raunchenbin3.github.io'
+languageCode = 'zh-CN'
+title = '先生的博客'
+theme = 'PaperMod'
+
+[params]
+  author = '先生'
+  description = '记录生活、思考与技术'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.profileMode]
+    enabled = true
+    title = "先生的博客"
+    subtitle = "记录生活、思考与技术"
+    imageUrl = ""
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = ""
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/raunchenbin3"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:your@email.com"
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '首页'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于'
+    url = '/about/'
+    weight = 30
+
+[markup.goldmark.renderer]
+  unsafe = true
