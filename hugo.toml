@@ -54,13 +54,7 @@ theme = 'PaperMod'
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
 
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/ruanchenbin3"
-
-[[params.socialIcons]]
-  name = "email"
-  url = "mailto:ruanchenbin3@gmail.com"
+# 社交图标已禁用
 
 [menu]
   [[menu.main]]
