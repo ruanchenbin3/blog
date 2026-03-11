@@ -87,5 +87,17 @@ theme = 'PaperMod'
 [markup.goldmark.renderer]
   unsafe = true
 
+[params.assets]
+  disableHLJS = true
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
+  safari_pinned_tab = "/safari-pinned-tab.svg"
+
+[params.homeInfoParams]
+  Title = "先生的博客"
+  Content = "记录生活、思考与技术"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]

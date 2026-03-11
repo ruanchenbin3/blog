@@ -1,106 +1,239 @@
-/* 自定义样式 */
+/* 复古打字机风格 */
 
-/* 首页标题样式 */
+:root {
+  --theme-bg: #f5f2e8;
+  --theme-text: #2c2c2c;
+  --theme-secondary: #6b6b6b;
+  --theme-accent: #8b4513;
+  --theme-border: #d4d0c0;
+  --theme-card: #faf8f3;
+}
+
+.dark {
+  --theme-bg: #1a1a1a;
+  --theme-text: #e0e0e0;
+  --theme-secondary: #a0a0a0;
+  --theme-accent: #d4a574;
+  --theme-border: #3a3a3a;
+  --theme-card: #252525;
+}
+
+/* 全局背景 */
+body {
+  background-color: var(--theme-bg) !important;
+  color: var(--theme-text) !important;
+  font-family: "Georgia", "Times New Roman", serif !important;
+}
+
+/* 导航栏 */
+.nav {
+  background: var(--theme-bg) !important;
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.nav a {
+  color: var(--theme-text) !important;
+  font-family: "Georgia", serif !important;
+  font-size: 1rem;
+}
+
+/* 首页标题 */
 .profile .profile_inner h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-family: "Georgia", serif !important;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--theme-text) !important;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
 }
 
 .profile .profile_inner .profile-subtitle {
-    font-size: 1.2rem;
-    color: var(--secondary);
-    margin-top: 0.5rem;
+  font-family: "Georgia", serif !important;
+  font-size: 1.1rem;
+  color: var(--theme-secondary) !important;
+  font-style: italic;
 }
 
-/* 按钮样式优化 */
+/* 按钮样式 - 复古风格 */
 .profile .button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
-    border-radius: 25px;
-    padding: 12px 30px;
-    color: white;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  background: transparent !important;
+  border: 1px solid var(--theme-accent) !important;
+  border-radius: 0 !important;
+  padding: 10px 24px !important;
+  color: var(--theme-accent) !important;
+  font-family: "Georgia", serif !important;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
 }
 
 .profile .button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  background: var(--theme-accent) !important;
+  color: var(--theme-bg) !important;
 }
 
-/* 文章卡片样式 */
+/* 文章列表样式 */
 .post-entry {
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    border: 1px solid var(--border);
+  background: var(--theme-card) !important;
+  border: 1px solid var(--theme-border) !important;
+  border-radius: 0 !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  transition: all 0.3s ease;
 }
 
 .post-entry:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .post-entry .entry-header h2 {
-    font-size: 1.4rem;
-    font-weight: 600;
+  font-family: "Georgia", serif !important;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--theme-text) !important;
 }
 
-/* 代码块样式 */
-.post-content pre {
-    border-radius: 8px;
-    background: #1a1a2e;
+.post-entry .entry-content {
+  color: var(--theme-secondary) !important;
+  font-size: 0.95rem;
+}
+
+/* 日期样式 */
+.post-entry .entry-footer {
+  font-family: "Courier New", monospace !important;
+  font-size: 0.8rem;
+  color: var(--theme-secondary) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 文章页面 */
+.post-title {
+  font-family: "Georgia", serif !important;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--theme-text) !important;
+}
+
+.post-content {
+  font-family: "Georgia", serif !important;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--theme-text) !important;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  font-family: "Georgia", serif !important;
+  font-weight: 400;
+  color: var(--theme-text) !important;
+}
+
+.post-content h2 {
+  border-bottom: 1px solid var(--theme-border);
+  padding-bottom: 0.5rem;
 }
 
 /* 引用样式 */
 .post-content blockquote {
-    border-left: 4px solid #667eea;
-    background: rgba(102, 126, 234, 0.05);
-    border-radius: 0 8px 8px 0;
-    padding: 1rem 1.5rem;
+  border-left: 3px solid var(--theme-accent);
+  background: transparent;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--theme-secondary);
+}
+
+/* 代码块 */
+.post-content pre {
+  background: #2d2d2d !important;
+  border-radius: 0 !important;
+  font-family: "Courier New", monospace !important;
+}
+
+.post-content code {
+  font-family: "Courier New", monospace !important;
+  background: rgba(139, 69, 19, 0.1);
+  color: var(--theme-accent);
+  padding: 2px 6px;
+  border-radius: 0;
 }
 
 /* 标签样式 */
 .post-tags a {
-    background: rgba(102, 126, 234, 0.1);
-    color: #667eea;
-    border-radius: 15px;
-    padding: 4px 12px;
-    font-size: 0.85rem;
-    transition: all 0.2s ease;
+  background: transparent !important;
+  border: 1px solid var(--theme-border);
+  color: var(--theme-secondary) !important;
+  border-radius: 0 !important;
+  padding: 4px 10px !important;
+  font-family: "Courier New", monospace !important;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .post-tags a:hover {
-    background: #667eea;
-    color: white;
-}
-
-/* 导航栏样式 */
-.nav {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.8);
-}
-
-.dark .nav {
-    background: rgba(29, 30, 32, 0.8);
+  background: var(--theme-accent) !important;
+  border-color: var(--theme-accent);
+  color: var(--theme-bg) !important;
 }
 
 /* 社交图标 */
 .social-icons a {
-    transition: all 0.3s ease;
+  color: var(--theme-secondary) !important;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1);
-    color: #667eea;
+  color: var(--theme-accent) !important;
 }
 
-/* 页脚样式 */
+/* 页脚 */
 .footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem 0;
+  border-top: 1px solid var(--theme-border);
+  color: var(--theme-secondary);
+  font-family: "Courier New", monospace !important;
+  font-size: 0.8rem;
+}
+
+.footer a {
+  color: var(--theme-accent) !important;
+}
+
+/* 搜索框 */
+#searchbox input {
+  background: var(--theme-card);
+  border: 1px solid var(--theme-border);
+  border-radius: 0;
+  font-family: "Georgia", serif;
+  color: var(--theme-text);
+}
+
+/* 分隔线 */
+hr {
+  border: 0;
+  border-top: 1px solid var(--theme-border);
+  margin: 2rem 0;
+}
+
+/* 链接样式 */
+a {
+  color: var(--theme-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--theme-text);
+  text-decoration: underline;
+}
+
+/* 返回顶部按钮 */
+.top-link {
+  background: var(--theme-accent) !important;
+  color: var(--theme-bg) !important;
+  border-radius: 0 !important;
 }
